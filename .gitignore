@@ -1,0 +1,26 @@
+.DS_Store
+.cache/
+__pycache__/
+.pytest_cache/
+
+# Reproducible experiment outputs
+/results/
+
+# Generated datasets, databases, model files, and media
+*.csv
+*.tsv
+*.parquet
+*.sqlite
+*.sqlite-*
+*.db
+*.npy
+*.npz
+*.pt
+*.pth
+*.safetensors
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.pdf

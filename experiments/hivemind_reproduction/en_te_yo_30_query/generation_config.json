@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "user_approved_for_api": false,
+  "models": [
+    "gemini-3.6-flash",
+    "gemini-3.1-pro-preview"
+  ],
+  "responses_per_prompt": 30,
+  "system_instructions": {
+    "en": "Respond only in English. Do not translate or explain the request. Directly fulfill it while preserving every stated constraint.",
+    "te": "Respond only in Telugu. Do not translate or explain the request. Directly fulfill it while preserving every stated constraint.",
+    "yo": "Respond only in Yoruba. Do not translate or explain the request. Directly fulfill it while preserving every stated constraint."
+  },
+  "generation_config": {
+    "max_output_tokens": 2048,
+    "thinking_config": {
+      "thinking_level": "low"
+    }
+  },
+  "provenance": "Records the configuration used for the archived multilingual requests. Approval is false to prevent accidental resubmission."
+}

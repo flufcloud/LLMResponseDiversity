@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source_dataset": "allenai/WildChat-4.8M",
+  "source_split": "train",
+  "source_row_limit": 100000,
+  "dataset_batch_size": 10000,
+  "conversation_turn_limit": 1,
+  "target_language": "en",
+  "languages": [
+    {"code": "es", "name": "Spanish"},
+    {"code": "zh", "name": "Chinese"},
+    {"code": "te", "name": "Telugu"},
+    {"code": "yo", "name": "Yoruba"}
+  ],
+  "translation_provider": "local-marian",
+  "translation_model": "Helsinki-NLP/opus-mt-mul-en",
+  "translation_revision": "848eae0c1676cfce9bb791c200e8228e5a6396ff",
+  "device": "mps",
+  "dtype": "float32",
+  "model_batch_size": 8,
+  "max_batch_characters": 20000,
+  "max_batch_items": 32,
+  "max_chunk_characters": 1200,
+  "max_input_tokens": 480,
+  "max_output_tokens": 512
+}

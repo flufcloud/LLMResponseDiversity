@@ -1,0 +1,30 @@
+[project]
+name = "llmresponsediversity"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "datasets>=5.0.1",
+    "fasttext-langdetect>=1.1.1",
+    "google-genai>=2.16.0",
+    "ipykernel==6.31.0",
+    "matplotlib>=3.10.5",
+    "modal>=1.5.4",
+    "numpy>=2.5.1",
+    "openai>=2.53.0",
+    "pandas>=3.0.5",
+    "polars>=1.35.2",
+    "scikit-learn>=1.9.0",
+    "sentencepiece>=0.2.1",
+    "sentence-transformers>=5.1.0",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

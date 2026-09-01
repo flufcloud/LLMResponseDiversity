@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "translation_provider": "local-nllb-200-distilled-600m",
+  "translation_model": "facebook/nllb-200-distilled-600M",
+  "translation_revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+  "device": "mps",
+  "batch_size": 8,
+  "max_batch_characters": 20000,
+  "max_batch_items": 32,
+  "max_chunk_characters": 1200,
+  "max_input_tokens": 512,
+  "max_output_tokens": 512
+}

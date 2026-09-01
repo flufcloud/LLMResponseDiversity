@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "user_approved_for_api": false,
+  "models": [
+    "gemini-2.5-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash-lite",
+    "gemini-3.6-flash"
+  ],
+  "responses_per_prompt": 10,
+  "system_instructions": {
+    "en": null
+  },
+  "generation_config": {
+    "max_output_tokens": 2048
+  },
+  "provenance": "Reconstructed from the archived response CSV. Other SDK generation settings were recorded as null. This is provenance, not an approved submission configuration."
+}
