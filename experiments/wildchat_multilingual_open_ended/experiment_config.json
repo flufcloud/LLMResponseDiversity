@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "experiment_id": "wildchat_multilingual_open_ended",
+  "inputs": [
+    {
+      "language": "Spanish",
+      "path": "results/wildchat_multilingual_pilot/data/Spanish.csv"
+    },
+    {
+      "language": "Chinese",
+      "path": "results/wildchat_multilingual_pilot/data/Chinese.csv"
+    }
+  ],
+  "input_column": "untranslated",
+  "deduplication_scope": "all_inputs",
+  "output_root": "results/wildchat_multilingual_open_ended",
+  "raw_output_dir": "results/wildchat_multilingual_open_ended/data/classifier_outputs",
+  "output_filename_suffix": "_classifier_output",
+  "output_columns": [
+    "original_query",
+    "revised_query",
+    "meaningful_information",
+    "greeting_model_inquiry",
+    "response_type",
+    "language"
+  ]
+}

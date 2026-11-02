@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_id": "multimodal_thinking_experiment",
+  "stage_id": "pii_judge",
+  "user_approved_for_api": true,
+  "prompt_template_path": "experiments/multimodal_thinking_experiment/pii_judge_prompt.txt",
+  "poem_placeholder": "{POEM}",
+  "text": {
+    "model": "gemini-3.1-flash-lite",
+    "system_instruction": null,
+    "generation_config": {
+      "max_output_tokens": 512,
+      "response_mime_type": "application/json",
+      "response_schema": {
+        "type": "OBJECT",
+        "required": [
+          "count",
+          "evidence_phrases"
+        ],
+        "properties": {
+          "count": {
+            "type": "INTEGER",
+            "minimum": 0
+          },
+          "evidence_phrases": {
+            "type": "ARRAY",
+            "items": {
+              "type": "STRING"
+            }
+          }
+        }
+      },
+      "thinking_config": {
+        "include_thoughts": false,
+        "thinking_level": "minimal"
+      }
+    }
+  }
+}

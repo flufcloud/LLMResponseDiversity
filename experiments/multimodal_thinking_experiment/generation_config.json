@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "experiment_id": "multimodal_thinking_experiment",
+  "method_id": "poetry_basic",
+  "output_filename": "poetry_basic_generations.csv",
+  "user_approved_for_api": true,
+  "topics_path": "experiments/multimodal_thinking_experiment/data/poetry_topics.json",
+  "responses_per_topic": 10,
+  "prompt_template": "Write a poem on the following topic: {TOPIC}",
+  "text": {
+    "model": "gemini-3.1-flash-lite",
+    "system_instruction": null,
+    "conditions": [
+      {
+        "condition_id": "minimal",
+        "generation_config": {
+          "max_output_tokens": 16384,
+          "thinking_config": {
+            "include_thoughts": true,
+            "thinking_level": "minimal"
+          }
+        }
+      },
+      {
+        "condition_id": "high",
+        "generation_config": {
+          "max_output_tokens": 16384,
+          "thinking_config": {
+            "include_thoughts": true,
+            "thinking_level": "high"
+          }
+        }
+      }
+    ]
+  }
+}

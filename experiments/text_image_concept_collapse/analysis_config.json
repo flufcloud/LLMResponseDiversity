@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "experiment_id": "text_image_concept_collapse",
+  "vision_language_embedding": {
+    "result_name": "siglip2_so400m_patch16_512",
+    "model": "google/siglip2-so400m-patch16-512",
+    "revision": "ceea1cba8130d8271436da4828633198c176a775",
+    "dimensions": 1152,
+    "max_text_tokens": 64,
+    "text_batch_size": 16,
+    "image_batch_size": 2,
+    "device": "mps",
+    "dtype": "float32"
+  },
+  "sentence_embedding_config": "embedding_config_bge_m3.json"
+}

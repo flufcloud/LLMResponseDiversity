@@ -1,0 +1,38 @@
+{
+  "responses_csv": "results/multimodal_thinking_experiment/data/poetry_basic/responses.csv",
+  "similarity_comparison_csv": "results/multimodal_thinking_experiment/tables/poetry_basic/homogeneity_comparison.csv",
+  "topic_homogeneity_csv": "results/multimodal_thinking_experiment/tables/poetry_basic/topic_homogeneity.csv",
+  "rhyme": {
+    "minimum_scheme_score": 0.6,
+    "minimum_matched_lines": {
+      "AA": 2,
+      "AB": 4,
+      "ABC": 6
+    },
+    "maximum_other_rhyme_distance": 3
+  },
+  "meter": {
+    "target_stress_pattern": "0101010101",
+    "minimum_pattern_similarity": 0.8,
+    "minimum_pronunciation_coverage": 0.8,
+    "minimum_poem_line_fraction": 0.5,
+    "minimum_syllables": 9,
+    "maximum_syllables": 11,
+    "beam_size": 64
+  },
+  "outputs": {
+    "poem_metrics": "results/multimodal_thinking_experiment/data/poetry_basic/poetic_form_metrics.csv",
+    "poetic_form_summary": "results/multimodal_thinking_experiment/tables/poetry_basic/poetic_form_summary.csv",
+    "poetic_form_summary_by_topic": "results/multimodal_thinking_experiment/tables/poetry_basic/poetic_form_summary_by_topic.csv",
+    "rhyme_scheme_distribution": "results/multimodal_thinking_experiment/tables/poetry_basic/rhyme_scheme_distribution.csv",
+    "rhyme_scheme_distribution_by_topic": "results/multimodal_thinking_experiment/tables/poetry_basic/rhyme_scheme_distribution_by_topic.csv",
+    "rhyme_scheme_mean_topic_percentages": "results/multimodal_thinking_experiment/tables/poetry_basic/rhyme_scheme_mean_topic_percentages.csv",
+    "line_count_distribution": "results/multimodal_thinking_experiment/tables/poetry_basic/line_count_distribution.csv",
+    "line_count_distribution_by_topic": "results/multimodal_thinking_experiment/tables/poetry_basic/line_count_distribution_by_topic.csv",
+    "stanza_count_distribution": "results/multimodal_thinking_experiment/tables/poetry_basic/stanza_count_distribution.csv",
+    "stanza_count_distribution_by_topic": "results/multimodal_thinking_experiment/tables/poetry_basic/stanza_count_distribution_by_topic.csv",
+    "stanza_length_distribution": "results/multimodal_thinking_experiment/tables/poetry_basic/stanza_length_distribution.csv",
+    "stanza_length_distribution_by_topic": "results/multimodal_thinking_experiment/tables/poetry_basic/stanza_length_distribution_by_topic.csv",
+    "homogeneity_comparisons": "results/multimodal_thinking_experiment/tables/poetry_basic/homogeneity_comparisons.csv"
+  }
+}

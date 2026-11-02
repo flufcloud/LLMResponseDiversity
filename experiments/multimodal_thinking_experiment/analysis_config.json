@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "experiment_id": "multimodal_thinking_experiment",
+  "methods": {
+    "poetry_basic": {
+      "input_filename": "poetry_basic_generations.csv",
+      "responses_per_generation": 1
+    },
+    "poetry_ssot": {
+      "input_filename": "poetry_ssot_generations.csv",
+      "responses_per_generation": 1
+    },
+    "poetry_vs5": {
+      "input_filename": "poetry_vs5_generations.csv",
+      "responses_per_generation": 5
+    }
+  },
+  "embedding": {
+    "model": "gemini-embedding-2",
+    "output_dimensionality": 768,
+    "task_prefix": "task: sentence similarity | query: {content}",
+    "batch_size": 100,
+    "user_approved_for_api": true
+  }
+}

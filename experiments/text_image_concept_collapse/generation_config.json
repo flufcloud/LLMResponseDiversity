@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "user_approved_for_api": true,
+  "responses_per_prompt": 20,
+  "text": {
+    "model": "gemini-3.8-flash",
+    "system_instruction": "Respond to the prompt directly.",
+    "generation_config": {
+      "thinking_config": {
+        "include_thoughts": true,
+        "thinking_level": "medium"
+      }
+    }
+  },
+  "image": {
+    "model": "gemini-3-pro-image",
+    "system_instruction": null,
+    "generation_config": {
+      "response_modalities": [
+        "IMAGE"
+      ],
+      "thinking_config": {
+        "include_thoughts": true
+      }
+    }
+  },
+  "prompts": [
+    {
+      "query_id": "nature",
+      "text": "Write a paragraph on a scene in nature.",
+      "image": "Create an image of a scene in nature."
+    },
+    {
+      "query_id": "animal",
+      "text": "Write a paragraph about an animal",
+      "image": "Create an image of an animal"
+    },
+    {
+      "query_id": "plant",
+      "text": "Write a paragraph about a plant",
+      "image": "Create an image of a plant"
+    },
+    {
+      "query_id": "dinner",
+      "text": "Write a paragraph describing a dinner meal.",
+      "image": "Create an image of a dinner meal."
+    },
+    {
+      "query_id": "lunch",
+      "text": "Write a paragraph describing a lunch meal.",
+      "image": "Create an image of a lunch meal."
+    },
+    {
+      "query_id": "breakfast",
+      "text": "Write a paragraph describing a breakfast meal.",
+      "image": "Create an image of a breakfast meal."
+    },
+    {
+      "query_id": "snack",
+      "text": "Write a paragraph describing a snack.",
+      "image": "Create an image of a snack."
+    },
+    {
+      "query_id": "fantasy",
+      "text": "Write a paragraph describing a fantasy novel",
+      "image": "Create an image of wallpaper for a fantasy novel"
+    },
+    {
+      "query_id": "sci-fi",
+      "text": "Write a paragraph describing a sci-fi novel",
+      "image": "Create an image of wallpaper for a sci-fi novel"
+    },
+    {
+      "query_id": "video-game",
+      "text": "Write a paragraph describing an indie video game",
+      "image": "Create an image of an indie video game"
+    },
+    {
+      "query_id": "history",
+      "text": "Write a paragraph on a historical moment.",
+      "image": "Create an image of a historical moment."
+    }
+  ]
+}

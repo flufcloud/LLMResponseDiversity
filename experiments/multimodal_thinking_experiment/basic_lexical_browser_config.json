@@ -1,0 +1,8 @@
+{
+  "generation_config": "experiments/multimodal_thinking_experiment/generation_config.json",
+  "thinking_tables": {
+    "minimal": "results/multimodal_thinking_experiment/tables/poetry_basic/lemma_topic_usage_minimal.csv",
+    "high": "results/multimodal_thinking_experiment/tables/poetry_basic/lemma_topic_usage_high.csv"
+  },
+  "combined_table": "results/multimodal_thinking_experiment/tables/poetry_basic/lemma_topic_sample_usage.csv"
+}

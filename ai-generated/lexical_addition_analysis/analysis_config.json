@@ -1,0 +1,39 @@
+{
+  "corpora": {
+    "basic": {
+      "input_csv": "results/multimodal_thinking_experiment/data/poetry_basic/responses.csv",
+      "poem_id_column": "poem_id",
+      "topic_column": "topic",
+      "adjective_column": null,
+      "features_jsonl": "ai-generated/lexical_addition_analysis/data/basic_poem_lemmas.jsonl"
+    },
+    "adjective": {
+      "input_csv": "results/templated_prompts_compositionality/data/generations.csv",
+      "poem_id_column": "generation_id",
+      "topic_column": "topic",
+      "adjective_column": "adjective",
+      "reuse_features_jsonl": "ai-generated/templated_poetry_analysis/data/line_text_features.jsonl",
+      "features_jsonl": "ai-generated/lexical_addition_analysis/data/adjective_poem_lemmas.jsonl"
+    }
+  },
+  "lexical": {
+    "spacy_model": "en_core_web_sm",
+    "batch_size": 64,
+    "content_pos": ["NOUN", "PROPN", "VERB", "ADJ", "ADV"],
+    "excluded_terms": ["no", "not", "never", "n't"],
+    "disabled_components": ["parser", "ner"]
+  },
+  "sample_size": 20,
+  "random_orderings": 1000,
+  "random_seed": 42,
+  "outputs": {
+    "basic_topic_curve": "ai-generated/lexical_addition_analysis/tables/basic_topic_accumulation_curve.csv",
+    "adjective_topic_curve": "ai-generated/lexical_addition_analysis/tables/adjective_topic_accumulation_curve.csv",
+    "dataset_curve": "ai-generated/lexical_addition_analysis/tables/dataset_accumulation_curve.csv",
+    "summary": "ai-generated/lexical_addition_analysis/tables/lexical_addition_summary.csv"
+  },
+  "plots": {
+    "accumulation": "ai-generated/lexical_addition_analysis/plots/lexical_addition_comparison.png",
+    "normalized_addition": "ai-generated/lexical_addition_analysis/plots/normalized_lexical_addition.png"
+  }
+}

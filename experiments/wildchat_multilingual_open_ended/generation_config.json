@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gemini-3.8-flash"
+  ],
+  "responses_per_query": 1,
+  "system_instruction_template_path": "experiments/wildchat_multilingual_open_ended/judge_prompt.txt",
+  "user_query_placeholder": "{USER_QUERY}",
+  "generation_config": {},
+  "user_approved_for_api": true
+}

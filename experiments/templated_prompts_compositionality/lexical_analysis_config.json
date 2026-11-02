@@ -1,0 +1,39 @@
+{
+  "input_csv": "results/templated_prompts_compositionality/data/generations.csv",
+  "spacy_model": "en_core_web_sm",
+  "batch_size": 64,
+  "content_pos": ["NOUN", "PROPN", "VERB", "ADJ", "ADV"],
+  "excluded_terms": ["no", "not", "never", "n't"],
+  "disabled_components": ["parser", "ner"],
+  "matched_topic_comparison": {
+    "basic_input_csv": "results/multimodal_thinking_experiment/data/poetry_basic_generations.csv",
+    "sample_size": 20,
+    "num_resamples": 1000,
+    "confidence_level": 0.95,
+    "random_seed": 0,
+    "output_csv": "results/templated_prompts_compositionality/tables/matched_basic_comparison_by_topic.csv"
+  },
+  "levels": [
+    {
+      "name": "topic",
+      "group_columns": ["topic"],
+      "output_csv": "results/templated_prompts_compositionality/tables/lemma_frequency_by_topic.csv",
+      "summary_group_columns": ["topic"],
+      "summary_output_csv": "results/templated_prompts_compositionality/tables/num_unique_lemmas_by_topic.csv"
+    },
+    {
+      "name": "topic and adjective class",
+      "group_columns": ["topic", "adjective_class"],
+      "output_csv": "results/templated_prompts_compositionality/tables/lemma_frequency_by_topic_adjective_class.csv",
+      "summary_group_columns": ["topic", "adjective_class"],
+      "summary_output_csv": "results/templated_prompts_compositionality/tables/num_unique_lemmas_by_topic_adjective_class.csv"
+    },
+    {
+      "name": "topic and adjective",
+      "group_columns": ["topic", "adjective_class", "adjective"],
+      "output_csv": "results/templated_prompts_compositionality/tables/lemma_frequency_by_topic_adjective.csv",
+      "summary_group_columns": ["topic", "adjective"],
+      "summary_output_csv": "results/templated_prompts_compositionality/tables/num_unique_lemmas_by_topic_adjective.csv"
+    }
+  ]
+}

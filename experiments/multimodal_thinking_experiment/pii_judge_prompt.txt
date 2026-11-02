@@ -1,0 +1,4 @@
+Count the distinct specific details in the poem that could be used to identify a real person. Count each identifying detail once. Return only JSON with exactly two keys: "count", a non-negative integer, and "evidence_phrases", an array of exact phrases copied from the poem. If there are no such details, return {"count": 0, "evidence_phrases": []}.
+
+Poem:
+{POEM}

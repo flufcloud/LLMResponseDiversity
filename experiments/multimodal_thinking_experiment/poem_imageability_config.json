@@ -1,0 +1,6 @@
+{
+  "input_csv": "results/multimodal_thinking_experiment/data/poetry_basic/responses.csv",
+  "lexical_config": "experiments/multimodal_thinking_experiment/lexical_analysis_config.json",
+  "regression_config": "experiments/glasgow_concreteness_regression/experiment_config.json",
+  "regression_results": "results/glasgow_concreteness_regression"
+}

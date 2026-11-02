@@ -1,0 +1,23 @@
+{
+  "responses_csv": "results/multimodal_thinking_experiment/data/poetry_basic/responses.csv",
+  "embeddings_sqlite": "results/multimodal_thinking_experiment/data/poetry_basic/embeddings.sqlite",
+  "embedding_config": "experiments/multimodal_thinking_experiment/analysis_config.json",
+  "lexical_config": "experiments/multimodal_thinking_experiment/lexical_analysis_config.json",
+  "corpus_random_pairs": 1000,
+  "random_seed": 42,
+  "syntax": {
+    "language": "en",
+    "processors": "tokenize,pos,mwt,lemma,depparse",
+    "package": "default",
+    "model_dir": ".cache/models/stanza",
+    "use_gpu": false,
+    "wl_iterations": 2
+  },
+  "outputs": {
+    "random_pair_scores": "results/multimodal_thinking_experiment/data/poetry_basic/corpus_random_pair_scores.csv",
+    "within_topic_pair_scores": "results/multimodal_thinking_experiment/data/poetry_basic/within_topic_pair_scores.csv",
+    "corpus_homogeneity": "results/multimodal_thinking_experiment/tables/poetry_basic/corpus_random_pair_homogeneity.csv",
+    "topic_homogeneity": "results/multimodal_thinking_experiment/tables/poetry_basic/topic_homogeneity.csv",
+    "homogeneity_comparison": "results/multimodal_thinking_experiment/tables/poetry_basic/homogeneity_comparison.csv"
+  }
+}

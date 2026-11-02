@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "experiment_id": "glasgow_concreteness_regression",
+  "source_csv": "datasets/Glasgow_norms.csv",
+  "word_column": "word_english",
+  "target_columns": [
+    "arousal_mean",
+    "valence_mean",
+    "dominance_mean",
+    "concrete_mean",
+    "imagine_mean",
+    "familiar_mean",
+    "aoa_mean",
+    "size_mean",
+    "gender_mean"
+  ],
+  "exclude_parenthetical_senses": true,
+  "train_fraction": 0.8,
+  "dev_fraction": 0.1,
+  "test_fraction": 0.1,
+  "split_seed": 0,
+  "stratify_bins": 10,
+  "ridge_alphas": [0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0],
+  "result_name": "all_minilm_l6_v2",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "dimensions": 384,
+  "normalize_embeddings": true,
+  "max_length": 32,
+  "batch_size": 128,
+  "checkpoint_batch_size": 4096,
+  "device": "mps",
+  "dtype": "float32",
+  "mlp": {
+    "hidden_dimension": 128,
+    "dropout": 0.35,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "batch_size": 64,
+    "max_epochs": 400,
+    "patience": 30,
+    "minimum_improvement": 0.0001,
+    "seed": 0,
+    "device": "mps"
+  },
+  "mlp_ensemble": {
+    "seeds": [0, 1, 2, 3, 4]
+  }
+}

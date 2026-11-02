@@ -7,7 +7,7 @@ import pandas as pd
 
 LANGUAGES = {"en": "English", "yo": "Yoruba", "te": "Telugu"}
 EXPERIMENT_ID = "en_te_yo_30_query"
-RESULTS_PATH = Path("results/experiments") / EXPERIMENT_ID
+RESULTS_PATH = Path("results") / EXPERIMENT_ID
 DATA_PATH = RESULTS_PATH / "data"
 TABLES_PATH = RESULTS_PATH / "tables"
 PLOTS_PATH = RESULTS_PATH / "plots"

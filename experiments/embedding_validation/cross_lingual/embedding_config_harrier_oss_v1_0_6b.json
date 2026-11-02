@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "result_name": "harrier_oss_v1_0_6b",
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "revision": "f9b9dc8d367d443f2479d27aa5d8d2850c0774ee",
+  "dimensions": 1024,
+  "normalize_embeddings": true,
+  "max_length": 32768,
+  "batch_size": 16,
+  "checkpoint_batch_size": 256,
+  "device": "mps",
+  "dtype": "auto",
+  "prompt_name": "sts_query",
+  "prompt": "Instruct: Retrieve semantically similar text\nQuery: "
+}

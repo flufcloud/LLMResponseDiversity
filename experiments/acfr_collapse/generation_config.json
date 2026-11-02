@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "experiment_id": "acfr_collapse",
+  "user_approved_for_api": true,
+  "source": {
+    "path": "datasets/ACFnorms_TrochCrutchReilly_2014.csv",
+    "word_column": "Word",
+    "word_sample_count": 150,
+    "sampling": "random_without_replacement",
+    "random_seed": null
+  },
+  "responses_per_prompt": 5,
+  "text": {
+    "model": "gemini-3.1-flash-lite",
+    "system_instruction": null,
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "thinking_config": {
+        "include_thoughts": true,
+        "thinking_level": "medium"
+      }
+    }
+  },
+  "image": {
+    "model": "gemini-3.1-flash-lite-image",
+    "system_instruction": null,
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "response_modalities": [
+        "IMAGE"
+      ],
+      "thinking_config": {
+        "include_thoughts": true
+      }
+    }
+  },
+  "prompts": {
+    "text": [
+      {
+        "template_id": "short_poem",
+        "template": "Write a short poem about {word}"
+      },
+      {
+        "template_id": "short_story",
+        "template": "Write a short story (about 300 words) about {word}"
+      },
+      {
+        "template_id": "short_conversation",
+        "template": "Simulate a short conversation between two people about {word}"
+      }
+    ],
+    "image": [
+      {
+        "template_id": "paint_representation",
+        "template": "Paint something representing {word}"
+      },
+      {
+        "template_id": "movie_poster",
+        "template": "Create a movie poster about {word}"
+      },
+      {
+        "template_id": "comic_conversation",
+        "template": "Create a page of a comic book, where two people have a conversation about {word}"
+      }
+    ]
+  }
+}

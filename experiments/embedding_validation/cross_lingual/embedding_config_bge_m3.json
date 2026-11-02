@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "result_name": "bge_m3",
+  "model": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "dimensions": 1024,
+  "normalize_embeddings": true,
+  "max_length": 8192,
+  "batch_size": 16,
+  "checkpoint_batch_size": 256,
+  "device": "mps"
+}

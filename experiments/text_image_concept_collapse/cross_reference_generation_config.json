@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "experiment_id": "text_image_concept_collapse",
+  "user_approved_for_api": true,
+  "captioning": {
+    "model": "gemini-3.8-flash",
+    "outputs_per_input": 1,
+    "system_instruction": null,
+    "prompt": "Describe only the visible contents of this image in one paragraph. Do not mention the prompt or infer facts that are not visually supported.",
+    "generation_config": {
+      "response_modalities": [
+        "TEXT"
+      ],
+      "thinking_config": {
+        "include_thoughts": true,
+        "thinking_level": "medium"
+      }
+    }
+  },
+  "response_to_image": {
+    "model": "gemini-3-pro-image",
+    "outputs_per_input": 1,
+    "system_instruction": null,
+    "prompt_mode": "response_verbatim",
+    "generation_config": {
+      "response_modalities": [
+        "IMAGE"
+      ],
+      "thinking_config": {
+        "include_thoughts": true
+      }
+    }
+  },
+  "response_to_image_retry": {
+    "model": "gemini-3-pro-image",
+    "outputs_per_input": 1,
+    "system_instruction": null,
+    "prompt_mode": "explicit_instruction_retry",
+    "instruction": "Create an image depicting the following description:",
+    "generation_config": {
+      "response_modalities": [
+        "IMAGE"
+      ],
+      "thinking_config": {
+        "include_thoughts": true
+      }
+    }
+  }
+}

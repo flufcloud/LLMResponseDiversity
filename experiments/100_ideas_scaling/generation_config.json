@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "experiment_id": "100_ideas_scaling",
+  "user_approved_for_api": false,
+  "model": "gemini-3.8-flash",
+  "responses_per_prompt": 10,
+  "system_instruction": null,
+  "generation_config": {},
+  "diversity_instruction": "Think through the first 100 ideas that come to you. List them all and format your answer into .json format.",
+  "prompts": [
+    {
+      "prompt_id": "prompt-001",
+      "base_prompt": "Write a short story about a colorful toad goes on an adventure in 50 words."
+    },
+    {
+      "prompt_id": "prompt-002",
+      "base_prompt": "Create the first verse of a wedding vow."
+    },
+    {
+      "prompt_id": "prompt-003",
+      "base_prompt": "Create a slogan for a cosmetic bag."
+    },
+    {
+      "prompt_id": "prompt-004",
+      "base_prompt": "Write a movie title, and write a *literal* opposite of that movie title.;"
+    },
+    {
+      "prompt_id": "prompt-005",
+      "base_prompt": "Name one meaning of life."
+    },
+    {
+      "prompt_id": "prompt-006",
+      "base_prompt": "Write a metaphor involving time."
+    },
+    {
+      "prompt_id": "prompt-007",
+      "base_prompt": "Write a tweet about: This is a video from this morning's crazy sunrise at the beach."
+    },
+    {
+      "prompt_id": "prompt-008",
+      "base_prompt": "Write a personal tweet about how I am walking right now at sunrise to the lighthouse; it's spring but cold like winter."
+    },
+    {
+      "prompt_id": "prompt-009",
+      "base_prompt": "Write a question about the plot of Zootopia."
+    },
+    {
+      "prompt_id": "prompt-010",
+      "base_prompt": "Discuss what an ecosystem is. Explain how it is maintained in nature and how it survives in one sentence."
+    }
+  ]
+}

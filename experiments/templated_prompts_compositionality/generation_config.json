@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_id": "templated_prompts_compositionality",
+  "user_approved_for_api": true,
+  "topics_path": "experiments/multimodal_thinking_experiment/data/poetry_topics.json",
+  "responses_per_pair": 10,
+  "prompt_template": "Write a(n) {ADJECTIVE} poem about {TOPIC}.",
+  "adjective_groups": {
+    "happy": ["joyful", "delightful", "exuberant"],
+    "sad": ["somber", "melancholy", "dismal"],
+    "unique": ["imaginative", "idiosyncratic", "creative"],
+    "aesthetic": ["scenic", "picturesque", "breathtaking"],
+    "ugly": ["sickening", "repugnant", "horrid"]
+  },
+  "text": {
+    "model": "gemini-3.1-flash-lite",
+    "system_instruction": null,
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "thinking_config": {
+        "include_thoughts": false,
+        "thinking_level": "minimal"
+      }
+    }
+  }
+}

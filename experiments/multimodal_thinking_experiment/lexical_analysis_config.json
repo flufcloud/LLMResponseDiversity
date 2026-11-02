@@ -1,0 +1,26 @@
+{
+  "spacy_model": "en_core_web_sm",
+  "batch_size": 64,
+  "content_pos": ["NOUN", "PROPN", "VERB", "ADJ", "ADV"],
+  "excluded_terms": ["no", "not", "never", "n't"],
+  "disabled_components": ["parser", "ner"],
+  "matched_vs5_comparison": {
+    "basic_input_csv": "results/multimodal_thinking_experiment/data/poetry_basic_generations.csv",
+    "vs5_input_csv": "results/multimodal_thinking_experiment/data/poetry_vs5/responses.csv",
+    "sample_size": 20,
+    "num_resamples": 1000,
+    "confidence_level": 0.95,
+    "random_seed": 0,
+    "output_csv": "results/multimodal_thinking_experiment/tables/poetry_vs5/matched_basic_comparison_by_topic.csv"
+  },
+  "content_words_output": "results/multimodal_thinking_experiment/tables/poetry_basic/content_words.csv",
+  "content_lemmas_output": "results/multimodal_thinking_experiment/tables/poetry_basic/content_lemmas.csv",
+  "lemma_topic_usage_outputs": {
+    "minimal": "results/multimodal_thinking_experiment/tables/poetry_basic/lemma_topic_usage_minimal.csv",
+    "high": "results/multimodal_thinking_experiment/tables/poetry_basic/lemma_topic_usage_high.csv"
+  },
+  "lemma_topics_output": "results/multimodal_thinking_experiment/tables/poetry_basic/lemma_topics.csv",
+  "lemma_topic_sample_usage_output": "results/multimodal_thinking_experiment/tables/poetry_basic/lemma_topic_sample_usage.csv",
+  "lemma_topic_coverage_output": "results/multimodal_thinking_experiment/tables/poetry_basic/lemma_topic_coverage.csv",
+  "num_unique_lemmas_by_topic_output": "results/multimodal_thinking_experiment/tables/poetry_basic/num_unique_lemmas_by_topic.csv"
+}

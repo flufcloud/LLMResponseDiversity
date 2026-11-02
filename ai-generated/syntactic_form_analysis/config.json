@@ -1,0 +1,39 @@
+{
+  "input_csv": "results/multimodal_thinking_experiment/data/poetry_basic/responses.csv",
+  "line_features_jsonl": "ai-generated/syntactic_form_analysis/data/line_features.jsonl",
+  "group_columns": [
+    "topic"
+  ],
+  "similarity_thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.75
+  ],
+  "random_orderings": 1000,
+  "random_seed": 42,
+  "example_pair_samples": 300000,
+  "example_similarity_targets": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "syntax": {
+    "language": "en",
+    "processors": "tokenize,pos,mwt,lemma,depparse",
+    "package": "default",
+    "model_dir": ".cache/models/stanza",
+    "use_gpu": false,
+    "wl_iterations": 2
+  },
+  "outputs": {
+    "line_form_assignments": "ai-generated/syntactic_form_analysis/data/line_form_assignments.csv",
+    "line_similarity_summary": "ai-generated/syntactic_form_analysis/tables/line_similarity_summary.csv",
+    "line_similarity_examples": "ai-generated/syntactic_form_analysis/tables/line_similarity_examples.csv",
+    "form_occupancy": "ai-generated/syntactic_form_analysis/tables/form_occupancy.csv",
+    "form_distribution_summary": "ai-generated/syntactic_form_analysis/tables/form_distribution_summary.csv",
+    "form_accumulation_curve": "ai-generated/syntactic_form_analysis/tables/form_accumulation_curve.csv",
+    "dataset_distribution_summary": "ai-generated/syntactic_form_analysis/tables/dataset_distribution_summary.csv",
+    "dataset_accumulation_curve": "ai-generated/syntactic_form_analysis/tables/dataset_accumulation_curve.csv"
+  },
+  "plots": {
+    "accumulation": "ai-generated/syntactic_form_analysis/plots/syntactic_form_accumulation.png",
+    "line_normalized_new_forms": "ai-generated/syntactic_form_analysis/plots/effective_new_forms_added.png"
+  }
+}

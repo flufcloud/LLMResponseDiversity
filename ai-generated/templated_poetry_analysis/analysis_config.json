@@ -1,0 +1,51 @@
+{
+  "input_csv": "results/templated_prompts_compositionality/data/generations.csv",
+  "data_dir": "ai-generated/templated_poetry_analysis/data",
+  "tables_dir": "ai-generated/templated_poetry_analysis/tables",
+  "embedding": {
+    "model": "gemini-embedding-2",
+    "output_dimensionality": 768,
+    "task_prefix": "task: sentence similarity | query: {content}",
+    "batch_size": 100,
+    "user_approved_for_api": true
+  },
+  "lexical": {
+    "spacy_model": "en_core_web_sm",
+    "batch_size": 64,
+    "content_pos": ["NOUN", "PROPN", "VERB", "ADJ", "ADV"],
+    "excluded_terms": ["no", "not", "never", "n't"],
+    "disabled_components": ["parser", "ner"]
+  },
+  "syntax": {
+    "language": "en",
+    "processors": "tokenize,pos,mwt,lemma,depparse",
+    "package": "default",
+    "model_dir": ".cache/models/stanza",
+    "use_gpu": false,
+    "wl_iterations": 2,
+    "batch_size": 64
+  },
+  "pair_sampling": {
+    "corpus_pairs": 1000,
+    "maximum_pairs_per_group": 200,
+    "random_seed": 42
+  },
+  "rhyme": {
+    "minimum_scheme_score": 0.6,
+    "minimum_matched_lines": {
+      "AA": 2,
+      "AB": 4,
+      "ABC": 6
+    },
+    "maximum_other_rhyme_distance": 3
+  },
+  "meter": {
+    "target_stress_pattern": "0101010101",
+    "minimum_pattern_similarity": 0.8,
+    "minimum_pronunciation_coverage": 0.8,
+    "minimum_poem_line_fraction": 0.5,
+    "minimum_syllables": 9,
+    "maximum_syllables": 11,
+    "beam_size": 64
+  }
+}

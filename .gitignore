@@ -1,5 +1,6 @@
 .DS_Store
 .cache/
+.venv/
 __pycache__/
 .pytest_cache/
 
@@ -8,7 +9,9 @@ __pycache__/
 
 # Generated datasets, databases, model files, and media
 *.csv
+*.jsonl
 *.tsv
+*.xlsx
 *.parquet
 *.sqlite
 *.sqlite-*
